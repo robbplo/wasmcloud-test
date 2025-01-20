@@ -1,0 +1,11 @@
+package wasmcloud:random-number;
+
+interface random-number {
+  random-int: func() -> u64;
+}
+
+world hello {
+  import wasi:random/random@0.2.3;
+
+  export random-number;
+}
