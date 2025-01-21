@@ -18,10 +18,10 @@
       {
         devShells.default = mkShell {
           buildInputs = [
-            wash-cli
             lld
             cargo
-            rustc
+            
+            rustup
           ];
         };
       }
