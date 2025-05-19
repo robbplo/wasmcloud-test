@@ -9,7 +9,7 @@ spec:
     - name: main
       type: component
       properties:
-        image: file://./build/random_number_s.wasm
+        image: wasmcloud-registry:5000/random_number:1
       traits:
         # Govern the spread/scheduling of the component
         - type: spreadscaler
